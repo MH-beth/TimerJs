@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src='resources/js/index.js'></script>
+    <link rel="stylesheet" href='resources/css/style.css'>
+    <title>Document</title>
+</head>
+<body>
+    <h1 id='timerT'>Timer</h1>
+    <br/>
+    <br/>
+    <form name='userTime' id='userTimer'>
+        <label>Timer Ends</label><br/>
+        <br/>
+        <input type='datetime-local' name='timerFinish'><br/>
+        <br/>
+        <input type='button' value='start Timer' onclick = timer() class='btn' id='btn'>
+        <input type='button' value='reset' onclick=reset() class='rset'>
+    </form>
+    <br/>
+    <div class='time'>
+        <h1 id='timer'></h1>
+        <h1 id='statue'></h1>
+    </div>
+
+    
+</body>
+</html>
