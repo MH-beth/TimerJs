@@ -1,10 +1,5 @@
-let running = false;
-const timer = () =>{
-
-    let d = new Date();
-    let time = document.userTime.timerFinish.value;
-
     const currentTime = () =>{
+        let d = new Date();
     	    // setting the current time !
    	 	let h = d.getHours();
     	let m = d.getMinutes();
@@ -23,7 +18,10 @@ const timer = () =>{
     	document.getElementById('timeShow').textContent = `${curentTime}`;
     }
     currentTime()
-    
+const timer = () =>{
+
+    let d = new Date();
+    let time = document.userTime.timerFinish.value; 
     // setting the date event
     let dEvent = new Date(`${time}`);
     let totalSeconds = (dEvent - d)/1000;
