@@ -3,6 +3,26 @@ const timer = () =>{
 
     let d = new Date();
     let time = document.userTime.timerFinish.value;
+
+    const currentTime = () =>{
+    	    // setting the current time !
+   	 	let h = d.getHours();
+    	let m = d.getMinutes();
+    	let s = d.getSeconds();
+    	if(h <10){
+    		h = '0' + h;
+    	}
+    	if(m<10){
+    		m = '0'+m;
+    	}
+    	if(s <10){
+    		s = '0'+s;
+    	}
+    // setting the time shower and all stuff
+    	let curentTime = `${h}:${m}:${s}`;
+    	document.getElementById('timeShow').textContent = `${curentTime}`;
+    }
+    currentTime()
     
     // setting the date event
     let dEvent = new Date(`${time}`);
@@ -29,8 +49,11 @@ const timer = () =>{
             if(seconds < 10){
                 seconds = '0'+seconds
             };
-            let time = `${days} J ${hours} H ${minutes}M ${seconds}S`
+            let time = `${days} J ${hours} H ${minutes}M ${seconds}S`;
             document.getElementById('timer').textContent = `${time}`;
+            if(days == 0 && hours == 0 && minutes == 0 && seconds == 0){
+            	document.getElementById('statue').textContent = 'Time Out !';
+            }
         }
         document.getElementById('statue').style='display:none';
         Show(totalSeconds);

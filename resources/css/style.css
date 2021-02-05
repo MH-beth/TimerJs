@@ -66,3 +66,14 @@ input{
     margin-right:700px;
     margin-left:700px;
 }
+.timeShow{
+    color:black;
+    border:solid 5px #fff;
+    background:white;
+    border-radius:5rem;
+    margin-right:500px;
+    margin-left:500px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
+    font-size: 80px;
+
+}
