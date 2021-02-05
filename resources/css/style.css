@@ -8,15 +8,12 @@ body {
     text-decoration:underline;
     font-family: Arial, Helvetica, sans-serif;
     color:#fff;
-    box-shadow: 9px 9px 0px 1px;
 }
 #userTimer{
     border:5rem;
-
 }
 label{
     font-size:40px;
-    text-transform:capitalize;
     font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     text-decoration:underline;
 }
@@ -53,7 +50,7 @@ input{
     border-radius:5rem;
     margin-right:500px;
     margin-left:500px;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
+    font-family:'Franklin Gothic Medium', 'Arial Narrow';
     font-size: 80px;
 }
 #statue{
