@@ -15,11 +15,16 @@
     	}
     // setting the time shower and all stuff
     	let curentTime = `${h}:${m}:${s}`;
-    	document.getElementById('timeShow').textContent = `${curentTime}`;
-    }
-    currentTime()
-const timer = () =>{
+        console.log(curentTime);
+        () => {
+            let up = document.getElementById("timeShow");
+            up.textContent = curentTime;
+        }
 
+    }
+    currentTime();
+
+const timer = () =>{
     let d = new Date();
     let time = document.userTime.timerFinish.value; 
     // setting the date event
